@@ -41,7 +41,7 @@ See "[Notes -> Bugs -> Invalid Mounting Point](Notes/Bugs.md#invalid-mounting-po
   * Blank
   * Read-Only Memory
 * Block-level devices
-  * <s>Blank</s> (TODO)
+  * Stub
 
 ## File Systems
 
@@ -55,6 +55,14 @@ This file system has a LOT more comments than the others which explains in much 
 Simple read-only file system that provides 3 files contained within a private constant in the "[fs_rom.py](FS-ReadOnlyMemory/fs_rom.py)" file.
 
 The goal of this file system is to illustrate how directory listings are done, and how files openned in `r*` modes are handled internally.
+
+## Block-level Devices
+
+### [Stub](BLD-Stub)
+Stub of a generic block-level class without any code, but detailed comments for each required methods and their warnings and notes.
+
+The reasoning behind not making this one a working class is that block-level devices require quite a bit more code to
+make them work as you need to create a working MBR and FAT partition.
 
 ## License
 This repo is license under the [MIT license](LICENSE).
