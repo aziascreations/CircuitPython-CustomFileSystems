@@ -49,10 +49,12 @@ See "[Notes -> Bugs -> Invalid Mounting Point](Notes/Bugs.md#invalid-mounting-po
 Blank file system with a lot of comments on how each procedure works and what it should return.<br>
 When its content is listed, it is shown as being empty.
 
+This file system has a LOT more comments than the others which explains in much more details how each important method works.
+
 ### [Read-Only Memory](FS-ReadOnlyMemory)
 Simple read-only file system that provides 3 files contained within a private constant in the "[fs_rom.py](FS-ReadOnlyMemory/fs_rom.py)" file.
 
-This example doesn't have all the comments that the blank file system does in order to improve readability.
+The goal of this file system is to illustrate how directory listings are done, and how files openned in `r*` modes are handled internally.
 
 ## License
 This repo is license under the [MIT license](LICENSE).
