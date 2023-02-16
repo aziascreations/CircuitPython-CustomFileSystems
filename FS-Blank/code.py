@@ -19,8 +19,10 @@ MOUNTING_POINT = "/mfs"
 print("Preparing the blank file system...")
 fs = fs_blank.BlankMemoryFileSystem()
 
+
 print("Mounting the blank file system in '{}' ...".format(MOUNTING_POINT))
 storage.mount(fs, MOUNTING_POINT)
+
 
 print("Checking if we can see it in the MCU's root folder:")
 if MOUNTING_POINT.lstrip("/") in os.listdir("/"):
@@ -29,6 +31,7 @@ else:
     print("> It couldn't be found, exiting !")
     sys.exit(2)
 
-print("Listing of '{}'".format(MOUNTING_POINT))
+
+print("Listing of '{}':  (Should be empty)".format(MOUNTING_POINT))
 for element in os.listdir(MOUNTING_POINT):
-    print("> {}".format(MOUNTING_POINT))
+    print("> {}".format(element))

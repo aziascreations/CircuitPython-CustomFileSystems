@@ -39,6 +39,7 @@ See "[Notes -> Bugs -> Invalid Mounting Point](Notes/Bugs.md#invalid-mounting-po
 ## Summary
 * File Systems
   * Blank
+  * Read-Only Memory
 * Block-level devices
   * <s>Blank</s> (TODO)
 
@@ -47,6 +48,11 @@ See "[Notes -> Bugs -> Invalid Mounting Point](Notes/Bugs.md#invalid-mounting-po
 ### [Blank](FS-Blank)
 Blank file system with a lot of comments on how each procedure works and what it should return.<br>
 When its content is listed, it is shown as being empty.
+
+### [Read-Only Memory](FS-ReadOnlyMemory)
+Simple read-only file system that provides 3 files contained within a private constant in the "[fs_rom.py](FS-ReadOnlyMemory/fs_rom.py)" file.
+
+This example doesn't have all the comments that the blank file system does in order to improve readability.
 
 ## License
 This repo is license under the [MIT license](LICENSE).
