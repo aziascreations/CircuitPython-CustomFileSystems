@@ -2,7 +2,7 @@
 
 # Checking if we are on CircuitPython.
 import sys
-if sys.implementation.name != "circuitpython"
+if sys.implementation.name != "circuitpython":
     print("ERROR: You are not using a CircuitPython-based implementation of Python !")
     sys.exit(1)
 

@@ -2,16 +2,28 @@
 This repo contains multiple experiments with virtual file system for [CircuitPython](https://github.com/adafruit/circuitpython)
 that attempt to emulate a conventional storage device at the file system and block-device level.
 
-One of 
+## Preamble
+One of the main advantage of this project is that it give you a strong, clear, and documented starting point for future
+experiments that may require virtual file systems and block-level devices.
 
-The second main advantage is as an educational tool due to the [permissive] nature of Python and CircuitPython's APIs
-which allows you to easily test different low-level [???] and effectively log their behaviour.
+For example, by using the blank examples, you can easily create a bootstrapping code and file system that connects
+securely to a remote server and pulls code directly from it without ever having touch the disk.<br>
+This is, at the very least, an interesting experiment from a data forensics and security point-of-view as it forces you
+to dabble in and learn a bit in both of these fields.
+
+The second main advantage is as an educational tool.<br>
+Due to the permissive nature of Python and CircuitPython's APIs, it lets someone test out different designs and
+mechanisms for their file systems without running the risk of corrupting unrelated data or bricking their device.
+Additionally, it is possible add logging to many of the methods which in turn allows you to see and understand parts of
+the inner workings of CircuitPython itself.
 
 ## Warning
-This project is an experiment and shouldn't be used in any production or remotely sensitive environment as
+This project is an experiment and shouldn't be used as-is in any production or remotely sensitive environment as
 they are vulnerable to many types of attacks if you don't modify them in order to secure them further.
 
-In CircuitPython 8.0, it apperas to be impossible to mount [...].
+In CircuitPython 8.0, it appears to be impossible to properly mount a file system inside another folder than the
+device's root folder.<br>
+See "[Notes -> Bugs -> Invalid Mounting Point](Notes/Bugs.md#invalid-mounting-point)" for more info.
 
 ## Requirements
 * A device with CircuitPython 8.0 or newer flashed onto it.
@@ -22,7 +34,7 @@ In CircuitPython 8.0, it apperas to be impossible to mount [...].
   * [ImDisk's Ram Disk tool](https://sourceforge.net/projects/imdisk-toolkit/) is recommended for Windows.
   * I don't know about Linux, sorry.
 * A lot of patience to deal with some of CircuitPython's quirks.
-  * See the [???](#) document for more info on some of the bug found during this project.
+  * See the "[Notes -> Bugs](/Notes/Bugs.md)" document for more info on some bugs found during this project.
 
 ## Summary
 * File Systems
