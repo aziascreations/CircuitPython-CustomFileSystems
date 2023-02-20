@@ -43,3 +43,9 @@ They are likely used when calling their equivalent from the `os` module, however
 | getcwd           | ❌               | ✔                  | ❔                            |
 | rename           | ❌               | ✔                  | ❔                            |
 | utime            | ❌               | ✔                  | ❔                            |
+
+## MKFS
+TODO: It's missing a parameter in the documentation !
+
+## /rom mounting point
+TODO: Was throwing obtuse errors.

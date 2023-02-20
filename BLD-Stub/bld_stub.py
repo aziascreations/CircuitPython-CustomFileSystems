@@ -1,11 +1,11 @@
 # Constants
 
-# Minimum sector size than can be requested to be read or written in the "readblocks" and "writeblocks" methods.
+# Minimum sector size that can be requested to be read or written in the "readblocks" and "writeblocks" methods.
 # Any call to these methods may use a multiple of this value.
 MIN_SECTOR_SIZE = 512
 
 # Code
-class StubBlockDevice():
+class StubBlockDevice:
     # Incomplete stub for a generic block-device interface class.
     # See: https://docs.circuitpython.org/en/latest/shared-bindings/sdcardio/index.html
     

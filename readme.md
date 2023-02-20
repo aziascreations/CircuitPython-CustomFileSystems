@@ -42,6 +42,7 @@ See "[Notes -> Bugs -> Invalid Mounting Point](Notes/Bugs.md#invalid-mounting-po
   * Read-Only Memory
 * Block-level devices
   * Stub
+  * Remote
 
 ## File Systems
 
@@ -63,6 +64,11 @@ Stub of a generic block-level class without any code, but detailed comments for 
 
 The reasoning behind not making this one a working class is that block-level devices require quite a bit more code to
 make them work as you need to create a working MBR and FAT partition.
+
+### [Remote](BLD-Remote)
+BLD class that uses an HTTP connection to get and send sectors from a remote Flask server.
+
+The inner workings of this example are detailed in the [BLD-Remote/readme.md](BLD-Remote/readme.md) file.
 
 ## License
 This repo is license under the [MIT license](LICENSE).
